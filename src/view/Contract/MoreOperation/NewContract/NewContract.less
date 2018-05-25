@@ -1,0 +1,815 @@
+
+@import (reference) '../../../../base';
+
+ul,li{
+	list-style:none;
+}
+
+.page-wrap {
+	height: 100%;
+}
+
+.new-contract{
+	width:100%;
+	padding-top:16px;
+	padding-bottom:60px;
+	background:#fff;
+	
+	/* 虚线 */
+	.base-line{
+		padding:32px 0 48px;
+		background:url(../../../../img/base-line.png) no-repeat bottom center;
+		background-size:100%;
+	}
+	
+	/* picker组件未点选时候字体的默认颜色 */
+	.gray .am-list-extra{
+		color:@color-99 !important;
+	}
+	
+	/* 学员信息 */
+	.student-info ul{
+		padding:0 50px;
+		li{
+			height:76px;
+			line-height:76px;
+			font-size:@font-28;
+			label{
+				width:160px;
+				float:left;
+				color:@color-66;
+			}
+			.i-put{
+				width:190px;
+				float:left;
+
+			}
+		}
+		.name{
+			width:60%;
+			float:left;
+		}
+		.sex{
+			width:40%;
+			float:left;
+		}
+		.birth {
+			width: 100%;
+			div {
+				width:190px;
+				float:left;
+			}
+		}
+		.class{
+			width: 100%;
+			position:relative;
+			p{
+				width:300px;
+				float:left;
+				box-sizing:border-box;
+				padding-left:10px;
+			}
+			>div{
+				position:absolute;
+				right:0;
+				top:13px;
+				width:120px;
+				height:50px;
+			}
+			.am-list-item{
+				height:50px !important;
+				min-height:50px !important;
+				padding:0 !important;
+				border:1PX solid @main-color;
+				border-radius:8px;
+			}
+			.am-list-line{
+				min-height:50px !important;
+			}
+			.am-list-extra{
+				text-align:center !important;
+				color:@main-color !important;
+			}
+		}
+	}
+
+	/* 合同详情 */
+	.contract-info{
+		.type{
+			box-sizing:border-box;
+			padding:0 50px;
+			margin:0;
+			overflow:hidden;
+			line-height:76px;
+			text-indent:0;
+			label{
+				display:block;
+				width:160px;
+				float:left;
+			}
+			.contract-type{
+				float:left;
+				padding-left:10px;
+				color:@color-33;
+			}
+		}
+		p.type {
+			margin-bottom:24px;
+		} 
+		.single-select div {
+			width:142px;
+			margin-right:16px;
+			margin-bottom:40px;
+			border:1PX solid @color-dd;
+			border-radius:34px;
+			font-size:@font-28;
+			color:@color-66;
+		}
+		.single-select div.active{
+			background:@assist-color-gloden;
+			color:@color-ff;
+			border-color:@assist-color-gloden;
+		}
+		.single-select div:nth-child(3n){
+			margin-right:16px;
+		}
+		.single-select div:nth-child(4n){
+			margin-right:0;
+		}
+		.detail-info{
+			box-sizing:border-box;
+			border-top:1px solid @color-dd;
+			padding:16px 50px;
+			li{
+				position:relative;
+				line-height:76px;
+				font-size:@font-28;
+				label{
+					color:@color-66;
+				}
+				strong,span{
+					float:right;
+					color:@color-33;
+				}
+				a{
+					display:block;
+					width:100px;
+					height:50px;
+					float:right;
+					margin-top:12px;
+					border:1PX solid @main-color;
+					border-radius:8px;
+					text-align:center;
+					line-height:50px;
+					font-size:@font-28;
+					color:@main-color;
+				}
+				.add{
+					color:@color-99;
+				}
+			}
+			.activity{
+				label{
+					color:@color-33;
+				}
+				a{
+					background:url(../../../../img/del.png) no-repeat 5px center;
+					background-size:20px 26px;
+					border:none;
+					span{
+						color:@assist-color-red;
+						font-size:@font-28;
+					}
+				}				
+			}
+			.total span,.total strong{
+				color:@assist-color-red;
+			}
+		}
+		.discount label{
+			padding-left:60px;
+			background:url(../../../../img/yuan.png) no-repeat left center;
+			background-size:36px 25px;
+		}
+		.special {
+			height: 76px;
+			label, span {
+				color:#717caa !important;
+			}
+		}
+		.special input{
+			width:420px;
+			height:76px; 
+			float:right;
+			box-sizing:border-box;
+			border:none;
+			border-bottom:1PX solid #ddd;
+			text-indent:10px;
+		}
+		.note{
+			width:100%;
+			padding:16px 0 24px; 
+			border-top:1px solid #ddd;
+			label{
+				display:block;
+				height:76px;
+				width:100%;
+				line-height:76px;
+				text-indent:50px;
+				font-size:28px;
+				color:#666;
+			}
+			.am-list{
+				margin-top:7px; 
+			}
+		}
+	}
+	.contract-info.base-line{
+		padding-bottom:32px;
+	}
+	
+	/* 联系人信息 */
+	.linkman-wrap {
+		padding:32px 0 48px;
+		.link-man{
+			box-sizing:border-box;
+			padding:0 50px;
+			font-size:30px;
+			ul{
+				overflow:hidden;
+				height:76px;
+				line-height:76px;
+
+			}
+			label{
+				color:@color-66;
+			}
+			span{
+				color:@color-33;
+			}
+			.name{
+				width:45%;
+				float:left;
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				font-size:@font-28;
+			}
+			.tel{
+				width:55%;
+				float:left;
+				text-align:right;
+				font-size:@font-28;
+				span{
+					display:inline-block;
+					min-width:150px;
+				}
+			}
+			.add-linkman{
+				position:relative;
+				height:76px;
+				line-height:76px;
+				font-size:@font-28;
+				a{
+					display:block;
+					width:120px;
+					height:50px;
+					float:right;
+					box-sizing:border-box;
+					margin-top:12px;
+					border:1PX solid @main-color;
+					border-radius:8px;
+					text-align:center;
+					line-height:50px;
+					font-size:@font-28;
+					color:@main-color;
+				}
+			}
+		}
+		.relat-msg{
+			li{
+				height:76px;
+				line-height:76px;
+			}
+			.input-name{
+				display:inline-block;
+				width:160px;
+				vertical-align:top !important;
+				.am-input-control{
+					height:100%;
+				}
+			}
+		}
+		.relat-wrap{
+			box-sizing:border-box;
+			padding:0 50px;
+			li{
+				height:76px;
+				line-height:76px;
+				font-size:@font-28;
+				p{
+					float:left;
+					line-height:76px;
+					color:@color-33;
+					display:block;
+				    overflow:hidden;
+				    white-space:nowrap;
+				    text-overflow:ellipsis;
+				}
+				p:nth-child(1){
+					width:17%;
+				}
+				p:nth-child(2){
+					width:18%;
+				}
+				p:nth-child(3){
+					width:33%;
+				}
+				a{
+					width:16%;
+					height:100%;
+					float:left;
+					box-sizing:border-box;
+					padding-left:28px;
+					background:url(../../../../img/pen.png) no-repeat 8px center;
+					background-size:24px 26px;
+					border:none;
+					line-height:76px;
+					font-size:@font-28;
+					color:@main-color;
+				}
+				a:last-child{
+					color:@assist-color-red;
+					background:url(../../../../img/del.png) no-repeat 8px center;
+					background-size:20px 26px;
+				}
+				span{
+					line-height:78px;
+				}
+			}
+		} 
+	}
+
+	/* 预览按钮 */
+	.preview{
+		width:100%;
+		height:200px;
+		box-sizing:border-box;
+		margin:50px auto 0;
+		background-color:#fff !important;
+		a{
+			display:block;
+			width:650px;
+			height:88px;
+			margin:0 auto;
+			background:@main-color;
+			border-radius:8px;
+			text-align:center;
+			line-height:88px;
+			color:@color-ff;
+		}
+	}
+
+	/* 转让合同样式 */
+	.contract-msg{
+		width:100%;
+		box-sizing:border-box;
+		padding:0 50px;
+		li{
+			display:flex;
+			width:100%;
+			height:76px;
+			line-height:76px;
+			justify-content:space-between;
+			font-size:@font-28;
+		}
+		span{
+			color:@color-33;
+		}
+		label{
+			color:@color-66;
+		}
+		strong{
+			color:@assist-color-red;
+		}
+	}
+	.c-type{
+		height:76px;
+		line-height:76px;
+		text-indent:50px;
+		font-size:@font-28;
+		span{
+			color:@color-33;
+		}
+		label{
+			color:@color-66;
+		}
+	}
+
+	.am-list-item.am-input-item:after{
+		border:none;
+	}
+}
+
+.hidden{
+	display:none;
+}
+
+.show{
+	display:block;
+}
+
+.date-picker,.i-put{
+	height:76px !important;
+	min-height:76px !important;
+	box-sizing:border-box;
+	padding:0 0 0 10px !important;
+	border-bottom:1PX solid @color-dd;
+}
+
+/* 日期选择公共样式 */
+.date-picker{
+	.am-list-extra{
+		padding:0 !important;
+		flex-basis:100% !important;
+		text-align:left !important;
+		font-size:@font-28 !important;
+		color:@color-33 !important;
+	}
+	.am-list-item.am-input-item,.am-list-line{
+		padding-right:0 !important;
+		min-height:76px !important;
+	}
+}
+
+/* input输入框公共样式 */
+.i-put{
+	input{
+		font-size:@font-28 !important;
+	}
+	.am-list-item,.am-list-line{
+		padding:0 !important;
+		min-height:76px !important;
+	}
+}
+
+/* 合同信息 公共样式 */
+.contract-sign{
+	ul{
+		width:100%;
+		box-sizing:border-box;
+		padding:0 50px;
+		li{
+			width:100%;
+			overflow:hidden;
+			font-size:@font-28;
+			label{
+				width:160px;
+				height:76px;
+				float:left;
+				line-height:76px;
+				color:@color-66;
+			}
+			.i-put{
+				width:440px;
+				.am-input-control{
+					height: 76px; 
+					input{
+						padding-top:24px;
+					}
+				}		
+			}
+			p{
+				width:440px;
+				float:left;
+				box-sizing:border-box;
+				padding-left:10px;
+				line-height:76px;
+			}
+		}
+	}
+	.sign-date >div{
+		width:440px;
+		float:left;
+	}
+}
+
+/* 付款方式公共样式 */
+.pay-wrap{
+	position:relative;
+	padding:32px 0 80px;
+	.iput-wrap{
+		padding-left:30px;
+		.am-input-item{
+			border-bottom:1PX solid @color-dd;
+			padding-left:20px !important;
+			padding-right:50px !important;
+		}
+		.am-input-label{
+			box-sizing:border-box;
+			padding-left:60px;
+			font-size:@font-28;
+			color:@color-66;
+		}
+		.am-input-control{
+			height:100%;
+		}
+		input{
+			height:100%;
+			font-size:@font-28 !important;
+			color:@color-66;
+			text-align:right;
+		}
+		.cash .am-input-label{
+			background:url(../../../../img/cash.png) no-repeat left center;
+			background-size:32px 26px;
+		}
+		.pos .am-input-label{
+			background:url(../../../../img/pos.png) no-repeat left center;
+			background-size:31px 26px;
+		}
+		.wx .am-input-label{
+			background:url(../../../../img/wx.png) no-repeat left center;
+			background-size:30px 28px;
+		}
+		.zfb .am-input-label{
+			background:url(../../../../img/zfb.png) no-repeat left center;
+			background-size:30px 30px;
+		}
+		.other .am-input-label{
+			background:url(../../../../img/other.png) no-repeat left center;
+			background-size:32px 32px;
+		}
+	}
+	.tip{
+		height:76px;
+		box-sizing:border-box;
+		margin-top:40px;
+		padding-left:50px;
+		padding-right:50px;
+		line-height:76px;
+		label{
+			padding-left:60px;
+			background:url(../../../../img/tip.png) no-repeat left center;
+			background-size:34px 34px;
+			font-size:@font-28;
+			color:@color-66;
+		}
+		.cash{
+			font-size:34px;
+			color:@assist-color-red;
+		}
+		span{
+			float:right;
+			font-size:@font-28;
+			color:@color-66;
+		}
+	}
+}
+
+.ipt-mask{
+	width:120px;
+	height: 50px;
+	border:none;
+	position: absolute;
+	right: 0;
+	top: 12px; 
+	background: transparent;
+}
+.am-modal-wrap .link-modal{
+	position:absolute;
+	background:@color-ff;
+	border-radius:16px;
+	height: auto !important;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 560px !important;
+}
+.am-modal-title{
+	  display: flex;
+    justify-content: center;
+}
+
+/* 弹框公共样式 */
+.am-modal-wrap .link-modal,.am-modal-wrap .present-modal{
+	position:absolute;
+	background:@color-ff;
+	border-radius:16px;
+	-webkit-border-radius:16px;
+	-moz--border-radius:16px;
+	-o-border-radius:16px;
+	height: auto !important;
+	.am-modal-content{
+		background: transparent;
+		box-sizing:border-box;
+		padding:56px 46px 40px;
+		overflow:visible;
+		.am-modal-body{
+			padding:0 !important;
+		}
+	}
+	.am-modal-header{
+		padding:0;
+		margin-bottom:68px;
+	}
+	.am-list-item.am-input-item:after{
+		left:0;
+	}
+	.am-button{
+		display:inline-block;
+		width:220px;
+		height:72px;
+		background:@main-color;
+		line-height:72px;
+		font-size:30px;
+		color:@color-ff;
+		border:none;
+	}
+	.close-btn{
+		background:#fff;
+		border:1px solid @main-color;
+		color: @main-color;
+		margin-right: 22px;
+	}
+
+	.close{
+		position:absolute;
+		left:50%;
+		display:block;
+		width:64px;
+		height:64px;
+		margin-left:-32px;
+		background:url('../../../../img/close.png') no-repeat center center;
+		background-size:contain;
+		z-index:99999;
+	}
+}
+
+/* 添加联系人弹框 */
+.link-modal{
+	position:relative;
+	.am-modal-content{
+		border-radius:16px;
+	}
+	.link-info{
+		width:100%;
+		li{
+			height:80px;
+			overflow:hidden;
+			font-size:@font-28;
+			line-height:80px;
+			display: flex;
+			label{
+				display:block;
+				width:140px;
+				float:left;
+				text-align:left;
+				color:@color-99;
+			}
+			.am-input-item{
+				width:318px;
+				height:80px;
+				min-height:0;
+				float:left;
+				padding:0;
+				input{
+					dispaly:block;
+					height:100%;
+					box-sizing:border-box;
+					padding-top:26px;
+					font-size:28px;
+					color:@color-33;
+					text-indent:10px;
+					border-radius: 0;
+				}
+			}
+			input::-webkit-input-placeholder{
+				color:@color-99 !important;
+			}
+			.modal-name,.modal-phone{
+				width:318px;
+			}
+		}
+		.relat{
+			.relat-name{
+				display:block;
+				width:120px;
+				float:left;
+				margin:0;
+				text-align:left;
+				text-indent:10px;
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+			}
+			span{
+				float:left;
+				margin:0 10px;
+				color:@color-66;
+			}
+			.modal-relationship{
+				display:inline-block;
+				width:160px;
+			}
+			input{
+				border:none;
+				outline:none;
+				border-bottom:1px solid #ddd;
+				text-indent:10px;
+				border-radius:0;
+			}
+		}
+	}
+	.am-button{
+		margin-top:50px;
+	}
+	.close{
+		bottom:-120px;
+	}
+}
+
+/* 确认优惠金额弹框 */
+.present-modal{
+	top:50%;
+  	transform:translate(-50%, -50%);
+  	left:50%;
+	.list div{
+		width:120px;
+		height:68px;
+		margin:11px;
+		text-align:center;
+		line-height:68px;
+		box-sizing:border-box;  
+		border:1PX solid @color-dd;
+		border-radius:34px;
+	}
+	.active{
+		background:@assist-color-gloden;
+		border-color:@assist-color-gloden !important;
+		color:@color-ff;
+	}
+	.am-button{
+		display:block !important;
+		width:320px !important;
+		margin:70px auto 0;
+	}
+	.close{
+		bottom:-120px;
+	}
+}
+.ht-hours-modal{
+	.am-flexbox.am-flexbox-align-middle{
+		padding-left: 11px;
+	}
+}
+
+.am-modal-wrap .link-modal .am-modal-header, .am-modal-wrap .present-modal .am-modal-header{
+	margin-bottom:0.3rem;
+}
+.link-modal.am-modal-transparent .am-modal-content .am-modal-body{
+	padding:0 !important;
+}
+.preferential >div{
+	width:100px;
+	height:50px;
+	float:right;
+	margin-top:12px;
+	.picker-active{
+		min-height:0;
+		padding:0;
+		border:1PX solid @main-color;
+		border-radius:8px;
+		.am-list-line{
+			width:100%;
+			min-height:0;
+			padding:0;
+		}
+		.am-list-extra{
+			flex-basis:100%;
+			padding:0;
+			color:@main-color;
+			text-align:center;
+			line-height:50px;
+			font-size:@font-28;
+		}
+	}
+}
+
+.new-contract .note, #up-contract .note{
+	width:100%;
+	padding:16px 0 24px; 
+	border-top:1px solid #ddd;
+	label{
+		display:block;
+		height:76px;
+		width:100%;
+		line-height:76px;
+		text-indent:50px;
+		font-size:28px;
+		color:#666;
+	}
+	.am-list{
+		margin-top:7px; 
+	}
+}

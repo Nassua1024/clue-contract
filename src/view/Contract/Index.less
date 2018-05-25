@@ -1,0 +1,107 @@
+@import (reference) '../../base';
+
+#main-list {
+  width: 100%;
+  box-sizing: border-box;
+  background: @color-ff;
+
+  .text-wrap {
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  .am-grid .am-flexbox .am-flexbox-item .am-grid-item-content {
+    position: static;
+    transform: none;
+  }
+  .am-grid-item {
+    &:before {
+      display: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+  .text {
+    position: relative;
+    font-size: @font-32;
+    color: #000;
+  }
+  b {
+    display: block;
+    height: 24px;
+    font-weight: normal;
+  }
+  .num {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    display: block;
+    min-width: 24px;
+    padding: 0 4px;
+    height: 24px;
+    line-height: 24px;
+    background: @assist-color-red;
+    border-radius: 12px;
+    font-size: 20px;
+    color: @color-ff;
+    font-style: normal;
+  }
+  .am-grid .am-flexbox .am-flexbox-item .am-grid-item-content > div {
+    padding: 0 !important;
+    position: relative;
+  }
+  .am-flexbox:nth-child(1) .am-grid-item:nth-child(2) {
+    box-sizing: border-box;
+    border-right: 1PX solid #eee;
+  }
+  .am-flexbox:nth-child(2) .am-grid-item:nth-child(1) {
+    box-sizing: border-box;
+    margin-left: -1PX;
+    border-right: 1PX solid #eee;
+  }
+  .am-grid .am-flexbox {
+    overflow: hidden;
+  }
+  .num1 {
+    left: 74%;
+    bottom: 30%;
+  }
+  .num2 {
+    left: 69%;
+    bottom: 30%;
+  }
+  .num3 {
+    left: 74%;
+    bottom: 30%;
+  }
+  .num4 {
+    left: 69%;
+    bottom: 27%;
+  }
+  .num5 {
+    left: 79%;
+    bottom: 27%;
+  }
+  .num6 {
+    left: 69%;
+    bottom: 27%;
+  }
+  .num7 {
+    left: 69%;
+    bottom: 27%;
+  }
+  .num8 {
+    left: 69%;
+    bottom: 27%;
+  }
+  .num9 {
+    left: 69%;
+    bottom: 27%;
+  }
+}

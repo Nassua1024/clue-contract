@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    
+    <meta http-equiv=X-UA-Compatible content="ie=edge">
+    <title>秦汉胡同</title>
+    <script type=text/javascript charset=utf-8 async defer=defer>
+        if (!window.Promise) {
+            document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+        }
+    </script>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        //        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+        if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var wWidth = document.documentElement.clientWidth;
+        } else {
+            var wWidth = 600;
+        }
+        document.documentElement.style.fontSize = wWidth / 7.5 + 'px';
+    </script>
+    
+    
+    <link href=/tmp/styles.css rel=stylesheet>
+</head>
+<body style="-webkit-overflow-scrolling: touch; height: 100%; overflow: auto; margin: 0 auto;">
+<style>
+    @media screen and (min-width: 750px) {
+        .new-contract .contract-info .single-select div:nth-child(4n) {
+            margin-right: .16rem;
+        }
+        #clueList {
+            width: 100vw;
+            height: 100vh;
+        }
+        .single-contract .up-grade {
+            padding: 0 .96rem;
+            flex-wrap: wrap;
+        }
+        .single-contract .up-grade div:nth-child(3n) {
+            margin-right: .56rem;
+        }
+        .single-contract .up-grade div:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+</style>
+<div id=view></div>
+<script type=text/javascript src=/tmp/lib.bundle.js></script>
+<script type=text/javascript src=/tmp/app.bundle.js></script>
+</body>
+<script src=https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.min.js></script>
+
+</html>
+

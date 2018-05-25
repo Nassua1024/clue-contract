@@ -1,0 +1,250 @@
+@import (reference) "../../../base";
+#view, #view>div, body, html{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+#array-course{
+	width: 100%;
+	.course-hours{
+		width: 91.46%;
+		background: #fff;
+		padding:40px 0 40px 58px;
+		font-size: 28px;
+		color: #999;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		.used{
+			height: 28px;
+			line-height: 28px;
+			margin-bottom: 40px;
+			span{
+				color: #ff6666;
+				margin-left: 36px;
+			}
+		}
+		.array-wrap{
+			height: 28px;
+			line-height: 28px;
+			display: flex;
+			.arrayed{
+				width: 354px;
+				span{
+					margin-left: 36px;
+					color: #666;
+
+				}
+			}
+			.unarray{
+				span{
+					margin-left: 30px;
+					color: #666;
+				}
+			}
+
+		}
+	}
+	.wait-array{
+		.store{
+			width: 480px;
+			height: 72px;
+			line-height: 72px;
+			color: #fff;
+			font-size: 30px;
+			text-align: center;
+			background:#717caa;
+			border-radius: 8px;
+			margin:50px auto 0;
+
+		}
+	}
+	.other-array{
+		font-size: 28px;
+		color: #666;
+		.tit-stu{
+			margin-bottom: 40px;
+		}
+		.flex-div,.noflex{
+			span{
+				display: inline-block;
+				width: 134px;
+				color:#999;
+				}
+		}
+		
+		.flex-div{
+			display: flex;
+
+			.flex-left{
+				width: 318px;
+				height: 38px;
+				line-height: 38px;
+				margin-bottom: 32px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				span{
+					width: 80px;
+				}
+			}
+			.flex-right{
+				overflow: hidden;
+				    width: 318px;
+				    height: 38px;
+				    line-height: 38px;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+			}
+		}
+		.noflex{
+			margin-bottom: 32px;
+
+			
+		}
+		.start-data{
+			position: relative;
+			height: 60px;
+			line-height: 60px;
+			span{
+				position: absolute;
+			}
+			div{
+				float: left;
+			    padding-left: 150px;
+			    width: 100%;
+			}
+		}
+		.btn-wrap{
+			display: flex;
+			margin-top: 28px;
+			margin-left: 12px;
+			.del{
+				margin-right: 102px;
+				margin-left: 15px;
+				width: 240px;
+				.btn-line-lg(#717caa);
+				height:70px;
+				line-height: 70px;
+			}
+			.replay{
+				width: 240px;
+				.btn-bg-lg(#717caa);
+				height:70px;
+				line-height: 70px;
+			}
+		}
+	}
+
+	.list-wrap{
+		width: 91.46%;
+		margin: 0 auto;
+		border-radius: 8px;
+		background: #fff;
+		position: relative;
+		padding: 24px 0 40px 0;
+		margin-bottom: 40px;
+		&>.flex-div{
+			padding:10px 38px;
+
+		}
+		.tit-stu{
+			height: 62px; 
+			line-height: 42px;
+			background:url('../../../img/icon_time_line.png') no-repeat;
+			background-size: 60px 60px;
+			background-position: left top;
+			padding-left: 68px;
+			color: #333;
+			font-weight:bold;
+			font-size: 32px;
+
+		}
+		.status{
+			display: inline-block;
+			font-size: 32px;
+			color: #fff;
+			height: 102px;
+			line-height: 102px;
+			padding:0 40px;
+			background: url('../../../img/array_course_status_btn.png') no-repeat;
+			background-size: 100% 102px;
+	   		 position: absolute;
+			top: 16px;
+			right: -16px;
+
+		}
+	}
+	.newCourseCard{
+		padding:20px 38px;
+		position: relative;
+		.flex-right span,
+		.flex-left span{
+			width: 80px;
+		}
+	}
+	.newCourseCard:after{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 1PX;
+		background: #ccc;
+		-webkit-transform: scaleY(0.5);
+		-ms-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+		top: 0;
+		width: 100%;
+	}
+	
+}
+//修改课时弹框样式
+
+.commen-modal{
+	width: 540px !important;
+	height: auto  !important;
+  position: absolute;
+  	left: 50%;
+	transform: translateX(-50%);
+	width: 560px !important; 
+  top: 0;
+
+	.am-modal-header{
+		border-bottom: 1PX solid #ddd;
+		padding:0;
+		.am-modal-title{
+			line-height: 100px;
+
+		}
+	}
+	.am-modal-body{
+		font-size: 28px !important;
+		.body-wrap{
+			padding: 30px 20px;
+		}
+		.am-list-item.am-input-item{
+			padding: 0;
+		}
+		.des{
+			text-align: left;
+			span{
+				// width: 380px;
+			}
+		}
+	}
+	.am-list-item{
+			&:after{
+				border: none !important;
+			}
+			input{
+				border:1PX solid #999 !important;
+				padding-left: 10px;
+			}
+
+	}
+	.am-list-item .am-input-label.am-input-label-5{
+		width: 210px !important;
+	}
+
+
+}
+

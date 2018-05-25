@@ -1,0 +1,194 @@
+
+@import (reference) '../../../base';
+
+#contract-preview{
+	width:100%;
+	overflow:hidden;
+	background:@color-ff;
+	
+	.common-css{
+		width:100%;
+		box-sizing:border-box;
+		padding:24px 50px 48px;
+		background:url(../../../img/base-line.png) no-repeat bottom center;
+		background-size:100%;
+		.tit{
+			height:76px;
+			line-height:76px;
+			font-size:30px;
+			color:@color-33;
+		}
+		li{
+			height:76px;
+			line-height:76px;
+			font-size:@font-28;
+			label{
+				color:@color-66;
+			}
+			span{
+				color:@color-33;
+			}
+		}
+		.flex-wrap {
+			font-size:@font-28;
+			.am-flexbox{
+				margin-bottom:48px;
+			}
+			.am-flexbox-item:nth-child(2){
+				text-align:right;
+				color:@color-33;
+			}
+			.am-flexbox-item:nth-child(1){
+				color:@color-66;
+			}
+		}
+		.give{
+			padding-left:0.6rem;
+    		background:url(../../../img/yuan.png) no-repeat left center;
+    		background-size:0.36rem 0.25rem;
+		}
+		.money{
+			strong{
+				font-size:34px;
+				color:@assist-color-red;
+			}
+			span{
+				color:@assist-color-red;
+			}
+		}
+	}
+
+	.stu-msg ul{
+		overflow:hidden;
+		li{
+			float:left;
+		}
+		li:nth-child(2n+1){
+			width: 378px;
+			float:left;
+		}
+		li:nth-child(2n){
+			width:254px;
+			float:right;
+		}
+		a{
+			position:absolute;
+			right:0;
+			top:-10px;
+			width:140px;
+			height:52px;
+			border:1PX solid @main-color;
+			border-radius:8px;
+			text-align:center;
+			line-height:52px;
+			font-size:@font-24;
+			color:@main-color;
+		}
+	}
+
+	.contract-msg{
+		padding:0;
+		ul{
+			box-sizing:border-box;
+			padding:0 56px 36px;
+			border-bottom:1PX solid @color-dd;
+			li:last-child{
+				margin-bottom:0;
+			}
+		}
+		.tit{
+			box-sizing:border-box;
+			padding-left:56px;
+		}
+		.flex-wrap{
+			box-sizing:border-box;
+			padding:36px 56px;
+		}
+	}
+
+	.link-msg{
+		.relat .am-flexbox{
+			height:76px;
+			line-height:76px;
+		}
+		.am-flexbox-item{
+			overflow:hidden;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			font-size:@font-28;
+			color:@color-66;
+		}
+		.am-flexbox-item:last-child{
+			text-align:right;
+		}
+		.link{
+			overflow:hidden;
+			li:first-child{
+				float:left;
+				width:45%;
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				label{
+					width:120px;
+				}
+			}
+			li:last-child{
+				float:right;
+				text-align:right;
+				width:55%;
+			}
+		}
+	} 
+	
+	.pay-state{
+		background:none;
+		.cash{
+			padding-left:50px;
+			background:url(../../../img/cash.png) no-repeat left center;
+			background-size:31px 26px;;
+		}
+		.pos{
+			padding-left:50px;
+			background:url(../../../img/pos.png) no-repeat left center;
+			background-size:31px 26px;;
+		}
+		.wx{
+			padding-left:50px;
+			background:url(../../../img/wx.png) no-repeat left center;
+			background-size:31px 26px;;
+		}
+		.zfb{
+			padding-left:50px;
+			background:url(../../../img/zfb.png) no-repeat left center;
+			background-size:31px 26px;;
+		}
+		.other{
+			padding-left:50px;
+			background:url(../../../img/other.png) no-repeat left center;
+			background-size:31px 26px;;
+		}
+		
+	}
+
+	.more-operation{
+		width:100%;
+		height:188px;
+		box-sizing:border-box;
+		padding:40px 56px 0;
+		background:#f5f5f5;
+		a{
+			width:310px;
+			background:119px;
+			background:url(../../../img/little-button.png) no-repeat center center;
+			background-size:100%;
+			line-height:0.9rem;
+		}
+		a:first-child{
+			float:left;
+		}
+		a:last-child{
+			float:right;
+		}
+	}
+}

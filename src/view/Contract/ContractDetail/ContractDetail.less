@@ -1,0 +1,369 @@
+
+@import (reference) '../../../base';
+
+#contract-detail{
+	width:100%;
+	background:@color-ff;
+	overflow:hidden;
+	padding-top:16px;
+	padding-bottom:0.6rem;
+
+	/* 公共样式 */
+	.common-css{
+		box-sizing:border-box;
+		padding:32px 50px 48px;
+		background:url(../../../img/base-line.png) no-repeat bottom center;
+		background-size:100%; 
+		&:nth-last-child(2){
+			background:none !important;
+		}
+		.tit{
+			margin-bottom:30px;
+			font-size:30px;
+			color:@color-33;
+		}
+		.stu-name{
+			display:block;
+		    overflow:hidden;
+		    white-space:nowrap;
+		    text-overflow:ellipsis;
+			span{
+				color:@assist-color-blue;
+				text-decoration:underline;
+			}
+		}
+		li{
+			line-height:76px;
+			font-size:@font-28;
+			label{
+				display:inline-block;
+				width:160px;
+				color:@color-66;
+			}
+			span{
+				color:@color-33;
+			}
+		}
+		.flex-wrap{
+			font-size:@font-28;
+			.am-flexbox-item:nth-child(1){
+				color:@color-66;
+			}
+			.am-flexbox-item:nth-child(2){
+				text-align:right;
+				color:@color-33;
+			}
+		}
+		.money{
+			font-size:30px;
+			font-weight:bold;
+			color:@assist-color-red !important;
+		}
+	}
+
+	/* 合同信息 */
+	.contract-header{
+		.cont-img{
+			div{
+				font-size:@font-28;
+				color:@color-66;
+			}
+			ul{
+				margin-top:40px;
+				overflow:hidden;
+				li{
+					width:160px;
+					height:160px;
+					float:left;
+					margin-left:50px;
+					background:@main-color;
+				}
+				li:first-child{
+					margin-left:0;
+				}
+			} 		
+		}
+	}
+	
+	/* 学员信息 */
+	.stu-msg{
+		ul{
+			overflow:hidden;
+		}
+		li{
+			float:left;
+		}
+		li:nth-child(2n+1){
+			width:378px;
+			float:left;
+		}
+		li:nth-child(2n){
+			width:254px;
+			float:right;
+		}
+		.grade label{
+			display:inline;
+		}
+		.paike{
+			position:relative;
+			width:100%;
+			height:76px;
+			line-height:76px;
+			font-size:@font-28;
+			label{
+				display:inline-block;
+				width:160px;
+				margin-right:10px;
+				color:@color-66;
+			}
+			span{
+				color:@color-33;
+			} 
+			a{
+				position:absolute;
+				right:0;
+				top:12px;
+				width:140px;
+				height:52px;
+				border:1PX solid @main-color;
+				border-radius:8px;
+				text-align:center;
+				line-height:52px;
+				font-size:@font-24;
+				color:@main-color;
+			}
+		}
+	}
+	
+	/* 合同详情 */
+	.contract-msg{
+		padding:32px 0 48px;
+		.valid-month{
+			width:180px;
+		}
+		ul{
+			box-sizing:border-box;
+			padding:0 50px 16px;
+			border-bottom:1PX solid @color-dd;
+		}
+		.tit{
+			box-sizing:border-box;
+			padding-left:50px;
+		}
+		.flex-wrap {
+			padding:16px 50px 0;
+			.am-flexbox{
+				line-height:76px;
+			}
+		}
+		.give{
+			padding-left:56px;
+			background:url(../../../img/yuan.png) no-repeat left center;
+			background-size:36px 25px;
+		}
+		.special .am-flexbox-item{
+			color:#717caa !important;
+		}
+		.special a{
+			width:100px;
+			height:50px;
+			box-sizing:border-box;
+			border:1PX solid #717caa;
+			border-radius:8px;
+			text-align:center;
+			line-height:50px;
+			font-size:24px;
+			color:#717caa;
+		}
+		.note{
+			width:100%;
+			box-sizing:border-box;
+			margin-top:24px;
+			padding:24px 50px 17px;
+			border-top:1px solid #ddd;
+			label{
+				height:76px;
+				line-height:76px;
+				font-size:28px;
+				color:#666;
+			}
+			p{
+				line-height:1.5;
+				font-size:28px;
+				color:#333;
+			}
+		}
+	}
+
+	/* 联系人 */
+	.link-msg{
+		.mer{
+			height:76px;
+			line-height:76px;
+			font-size:@font-28;
+			color:@color-33;
+		}
+		.link{
+			overflow:hidden;
+			label{
+				width:auto;
+				margin:0;
+			}
+			li:first-child{
+				float:left;
+				width:45%;
+			}
+			li:last-child{
+				float:right;
+				text-align:right;
+				width:55%;
+			}
+		}
+		.relat .am-flexbox{
+			height:76px;
+			line-height:76px;
+			color:@color-66;
+			.am-flexbox-item{
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				font-size:@font-28;
+				color:@color-33;
+			}
+			.am-flexbox-item:nth-child(3){
+				text-align:right;
+			}
+		}
+	} 
+	
+	/* 支付 */
+	.pay-state{
+		.am-flexbox{
+			height:76px;
+			line-height:76px;
+		}
+		.cash{
+			padding-left:50px;
+			background:url(../../../img/cash.png) no-repeat left center;
+			background-size:32px 26px;
+		}
+		.pos{
+			padding-left:50px;
+			background:url(../../../img/pos.png) no-repeat left center;
+			background-size:31px 26px;
+		}
+		.wx{
+			padding-left:50px;
+			background:url(../../../img/wx.png) no-repeat left center;
+			background-size:30px 28px;
+		}
+		.zfb{
+			padding-left:50px;
+			background:url(../../../img/zfb.png) no-repeat left center;
+			background-size:30px 30px;
+		}
+		.other{
+			padding-left:50px;
+			background:url(../../../img/other.png) no-repeat left center;
+			background-size:32px 32px;
+		}
+	}
+	
+	/* 分单 */
+	.pay-part .fendan-list{
+		overflow:hidden;
+		margin-bottom: 20px;
+		.time { 
+			width: 100%; 
+			font-size: 26px;
+			color: #717caa;
+		}
+		ul {
+			display: inline-block;
+			width: 50%;
+			margin-bottom: 15px;
+		}
+		li{
+			font-size:@font-28;
+			line-height: 2;
+			span{
+				color:@color-66;
+			}
+			label {
+				width: 130px;
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+				vertical-align: middle;
+			}
+		}
+	}
+	.cc-branch {
+		margin-top: 15px; 
+	}
+	.store-branch {
+		margin-top: 30px;
+	}
+	
+	/* 关联合同 */
+	.contact-contract{
+		padding:32px 0 60px 50px;
+		background:none;
+		ul{
+			height:76px;
+			line-height:76px;
+			background:url(../../../img/icon-youjiantou.png) no-repeat 92% center;
+			background-size:10px 16px;
+			border-bottom:1PX solid @color-dd;
+			li{
+				float:left;
+			}
+			li:first-child{
+				width:25%;
+				color:@color-33;
+			}
+			li:nth-child(2){
+				width:35%;
+				color:@color-33;
+			}
+			li:nth-child(3){
+				width:40%;
+				color:#717caa;
+			}
+		}
+		ul:last-child{
+			border:none;
+		}
+	}
+	
+	/* 更多操作 */
+	.more-operation a{
+		margin:50px auto 0;
+	}
+	.more-oprera{
+		background-color: #fff;
+	}
+}
+
+.plan-hour{
+	padding: 0.32rem 0 0.48rem !important;
+	.tit {
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	ul{
+		box-sizing: border-box;
+		padding: 0 0.5rem;
+		border-bottom: 1px solid #ddd;	
+		li{
+			width: 50%;
+			display: inline-block;
+		    overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		}
+	}
+	ul:last-child {
+		border-bottom: none;
+	}
+}

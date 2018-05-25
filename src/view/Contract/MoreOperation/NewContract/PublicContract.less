@@ -1,0 +1,225 @@
+.PublicContract{
+	h5{
+		font-size: 30px;
+		color: #333;
+		font-weight: normal;
+	}
+	.BtnGroup{
+		text-align: center;
+	}
+	.PcCancel,
+	.PcConfirm{
+		width: 300px;
+		height: 110px;
+		font-size:32px;
+		margin: 34px 2%;
+		padding: 10px 0 40px;
+		text-align: center;
+		background:url('../../../../img/little-button.png') no-repeat;
+		background-size: 100%;
+		border:none;
+		color:#fff;
+		cursor: pointer;
+	}
+	.PcIdearbox{
+		padding:40px 0px 52px;
+		background: #fff;
+	}
+	.PcList{
+			margin-bottom: 37px;
+		li{
+			font-size: 0px;
+			margin-top: 48px;
+			div{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 28px;
+				color:#999;
+			}
+			div.PcChild{
+    			color: #ccc;
+    		}
+			div:nth-child(2n+1){
+				// width:182px;
+				width:26.225%;
+				text-align: left;
+				
+			}
+			div:nth-child(2n){
+				box-sizing: border-box;
+				// width: 512px;
+				width: 73.775%;
+				padding-right: 56px;
+				color: #333;
+				text-align: right;
+			}
+			.inpuText{
+				padding-right: 0px !important;
+				input{
+					box-sizing: border-box;
+					// width:512px;
+					width: 100%;
+					padding-right: 56px;
+					border:none;
+					border-bottom: 1PX solid #ccc;
+					padding-bottom: 14px ;
+					border-radius: 0;
+					text-align: right !important;
+				}
+				div{
+					width:100%;
+				}
+				.gray.date-picker .am-list-extra{
+					color:#666 !important;
+				}
+				.date-picker.am-list-item.am-list-item-middle{
+					padding-right: 56px !important;
+				}
+				.am-list-line,.am-list-extra {
+					height: 100%;
+    				line-height: 2.5;
+    				
+    				text-align: right !important;
+				}
+			}
+			.PcPrice{
+				color: #ff6666 !important;
+				font-size: 28px;
+			}
+		}
+	}
+	.groupBox{
+		margin-top: 67px;
+		padding-left:56px;
+		padding-top:40px;
+		border-top: 1PX solid #fff;
+	}
+	.groupBoxC{
+		padding-left:56px;
+		.PcList li{
+			margin-top: 30px;
+		}
+	}
+	.groupBox.PcBorder.boxBag{
+		padding-top:1px;
+	}
+	.boxBag{
+		position: relative;
+		padding-left:56px;
+	}
+	
+	.PcBorder{
+		position: relative;
+		padding-left: 56px;
+		margin-top: 3px;
+	}
+	.PcBorder:before{
+		content: "";
+		position: absolute;
+		left:0px;
+		right:0px;
+		height: 1PX;
+		background:#ccc;
+		transform:scaleY(.5);
+		top:0;
+		width: 100%
+	}
+	.boxBag:after{
+		content: "";
+		position: absolute;
+		border-bottom: 0px;
+		left:0px;
+		right:0px;
+		background:url('../../../../img/base-line.png') no-repeat;
+		height: 30px;
+		background-size: 100%;
+	}
+	.PcChild .date-picker{
+		text-align: right !important;
+	}
+	.PcChild .date-picker,
+	.PcChild .am-list-line{
+		
+		border-bottom: none;
+		width: 100% !important;
+		padding-left: 0px !important;
+	}
+	.PcChild .am-list-extra{
+		width: 116px !important;
+		height: 52px !important;
+		line-height: 52px !important;
+		color: #717caa !important;
+		font-size: 24px !important;
+		text-align: center !important ;
+		border:1PX solid #717caa;
+		border-radius: 10px;
+		outline: none;
+		background: #fff;
+		margin-bottom:10px;
+		cursor: pointer;
+	}
+	.tip{
+		display: inline-block;
+		width:32px;
+		height: 32px;
+		margin-right: 6px;
+		vertical-align: top;
+		background:url(../../../../img/tip.png) no-repeat left center;
+		background-size: 32px;
+	}
+	.cash{
+		background:url(../../../../img/cash.png) no-repeat left center;
+		background-size:32px 26px;
+	}
+	.pos{
+		background:url(../../../../img/pos.png) no-repeat left center;
+		background-size:31px 26px;
+	}
+	.wx{
+		background:url(../../../../img/wx.png) no-repeat left center;
+		background-size:30px 28px;
+	}
+	.zfb{
+		background:url(../../../../img/zfb.png) no-repeat left center;
+		background-size:30px 30px;
+	}
+	.other{
+		background:url(../../../../img/other.png) no-repeat left center;
+		background-size:32px 32px;
+	}
+	.PcPriceBox{
+		 li div{width: 50% !important;}
+	}
+	.PayIdear{
+		i{ 
+			display: inline-block;
+			width:32px;
+			height: 32px;
+			margin-right: 6px;
+			vertical-align: top;
+		}
+		.borbottom{
+			input{
+				border:none;
+				text-align: right;
+				width: 250px;	
+			}
+			li{
+			 position: relative;
+			 margin-top: 30px;
+			 padding-bottom: 16px;
+			}
+			li:after{
+				content: "";
+				position: absolute;
+				left:0px;
+				right:0px;
+				height: 1PX;
+				background:#ccc;
+				transform:scaleY(.5);
+				bottom:0;
+				width: 100%
+			}
+		}
+	}
+}

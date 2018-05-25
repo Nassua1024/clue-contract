@@ -1,0 +1,32 @@
+@import (reference) "../../../base";
+
+.extra-right {
+
+  .am-list-extra, input[type='text'],input[type='tel'], textarea, .fake-input-placeholder, .fake-input{
+    text-align: right !important;
+  }
+
+  &.am-input-item {
+    input {
+      padding-right: 30px;
+    }
+    .am-input-clear {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-20px, -50%);
+      width: 26px;
+      height: 26px;
+      background-size: 26px auto;
+    }
+  }
+  .am-list-line {
+    padding-right: 60px;
+  }
+  .am-list-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0 !important;
+    transform: translate(-20px, -50%);
+  }
+}

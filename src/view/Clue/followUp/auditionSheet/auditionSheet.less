@@ -1,0 +1,102 @@
+@import (reference) "../../../../base";
+
+
+#AuditionSheet, #AddAudition {
+
+
+  .tip {
+    justify-content: center;
+    align-content: center;
+    height: 88px;
+    line-height: 88px;
+    color: #4285f4;
+    font-size: 28px;
+    background: #e8f0fe;
+  }
+  .custom-student {
+    input {
+      padding-left: 160px;
+      color: #888;
+      font-size: 32px;
+    }
+  }
+
+  .icon-xing {
+    position: relative;
+    border-bottom: 1PX solid #eee;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      left: 0;
+      top: 50%;
+      transform: translate(30px, -50%);
+      background: url(../../../../img/icon-xinghao.png) no-repeat center/contain;
+    }
+  }
+
+  .btns {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0;
+    justify-content: center;
+    background: #F5F5F5;
+
+    > .am-button {
+      width: 300px;
+      border-radius: 10px;
+      height: 88px;
+      line-height: 88px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .ok {
+      background: @main-color;
+      color: #fff;
+      margin-left: 50px;
+      &.am-button-active {
+        background: @main-color-on;
+      }
+    }
+    .next {
+      background: transparent;
+      border: 1PX solid;
+      color: @main-color;
+      &.am-button-active {
+        color: @main-color-on;
+      }
+    }
+  }
+
+  .am-list-item {
+    padding-left: 50px;
+    height: 96px;
+    line-height: 94px;
+  }
+  .am-list-content, .am-input-label {
+    width: 160px;
+    -ms-flex: none;
+    flex: none;
+    font-size: 30px;
+    color: #666;
+  }
+  .am-list-extra {
+    flex-basis: 78.93333333%;
+    text-align: left;
+  }
+}
+
+
+#AddAudition {
+  .icon-xing {
+    &:after {
+      display: none;
+    }
+  }
+}

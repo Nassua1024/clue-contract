@@ -1,0 +1,52 @@
+
+@import (reference) '../../../base.less';
+
+#operation-list{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+	padding-left:30px;
+	background:@color-ff;
+	li{
+		position:relative;
+		box-sizing:border-box;
+		height:106px;
+		padding:0 40px 0 20px;
+		border-bottom:1PX solid @color-dd;
+		line-hieght:106px;
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			line-height:106px;
+			font-size:@font-28;
+			color:@color-33;
+			
+		}
+		.up-btn{
+			position:absolute;
+			top:50%;
+			right:80px;
+			width:120px;
+			height:48px;
+			margin-top:-24px;
+			background:@main-color;
+			border-radius:24px;
+			text-align:center;
+			line-height:48px;
+			font-size:@font-24;
+			color:@color-ff;
+			font-style:normal;
+		}
+		.can-use{
+			color:@color-33;
+			background:url(../../../img/icon-youjiantou.png) no-repeat right center;
+			background-size:10px 16px;
+		}
+		.no-use{
+			color:@color-99;
+			background:url(../../../img/no-use.png) no-repeat right center;
+			background-size:10px 16px;
+		}
+	}
+}

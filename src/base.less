@@ -1,0 +1,196 @@
+
+
+// 1. Color
+@main-color: #717caa; // 主色
+@main-color-on: #5a6387;
+
+// 强调色
+@assist-color-red: #FF6666; // 强调、重要信息展示
+@assist-color-red-on: #CC5252;
+@assist-color-blue: #4285F4;
+@assist-color-blue-on: #356AC3;
+@assist-color-gloden: #E1C99B;
+@assist-color-gloden-on: #B4A17C;
+
+// 常用色值
+@color-f5: #F5F5F5;  // 主用于背景色
+@color-dd: #DDD;  // 主用于分割线
+@color-cc: #CCC;  // 主用于无法点击按钮
+@color-ff: #FFF;
+@color-33: #333;  // 文字标题等
+@color-66: #666;
+@color-99: #999;
+
+// 2. Font
+@font-36: 36px;
+@font-32: 32px;
+@font-28: 28px;
+@font-24: 24px;
+
+.text-main{    // 功能文字色值1
+  color: @main-color;
+}
+.text-primary{   // 功能文字色值2
+  color: @assist-color-blue;
+}
+.text-disabled {  // 功能失效/取消状态
+  color: @color-99;
+}
+.text-sm-disabled,
+.text-placeholder{   // 文字失效/placeholder
+  color: @color-cc;
+  font-size: @font-24;
+}
+.text-lg {
+  color: @color-33;
+  font-size: @font-36;
+}
+.text-default {
+  color: @color-33;
+  font-size: @font-32;
+}
+.text-sm-33 {
+  color: @color-33;
+  font-size: @font-28;
+}
+.text-sm-66 {
+  color: @color-66;
+  font-size: @font-28;
+}
+.text-ls-33 {
+  color: @color-33;
+  font-size: @font-24;
+}
+.text-ls-66 {
+  color: @color-66;
+  font-size: @font-24;
+}
+.text-ls-99 {
+  color: @color-99;
+  font-size: @font-24;
+}
+
+
+// 3. Button
+.btn-lg {
+  width: 240px / 750px * 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 8px;
+}
+.btn-default {
+  width: 180px / 750px * 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 8px;
+}
+.btn-sm {
+  width: 120px / 750px * 100%;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 8px;
+}
+
+// 按钮-大号-填充
+.btn-bg-lg(@btn-lg-bg-color) {
+  &:extend(.btn-lg);
+  background: @btn-lg-bg-color;
+  color: @color-ff;
+}
+// 按钮-大号-线框
+.btn-line-lg(@btn-lg-line-color) {
+  &:extend(.btn-lg);
+  background: @color-ff;
+  color: @btn-lg-line-color;
+  border: 1PX solid;
+}
+// 按钮-中号-填充
+.btn-bg-default(@btn-default-bg-color) {
+  &:extend(.btn-default);
+  background: @btn-default-bg-color;
+  color: @color-ff;
+}
+// 按钮-中号-线框
+.btn-line-default(@btn-default-line-color) {
+  &:extend(.btn-default);
+  background: @color-ff;
+  color: @btn-default-line-color;
+  border: 1PX solid;
+}
+// 按钮-小号-填充
+.btn-bg-sm(@btn-sm-bg-color) {
+  &:extend(.btn-sm);
+  background: @btn-sm-bg-color;
+  color: @color-ff;
+}
+// 按钮-小号-线框
+.btn-line-sm(@btn-sm-line-color) {
+  &:extend(.btn-sm);
+  background: @color-ff;
+  color: @btn-sm-line-color;
+  border: 1PX solid;
+}
+// 按钮-禁用-大号
+.btn-disabled-lg {
+  &:extend(.btn-lg);
+  color: @color-ff;
+  background: @color-99;
+}
+.btn-disabled-default {
+  &:extend(.btn-default);
+  color: @color-ff;
+  background: @color-99;
+}
+.btn-disabled-sm {
+  &:extend(.btn-sm);
+  color: @color-ff;
+  background: @color-99;
+}
+// 按钮-列表中-大号
+.btn-inlist {
+  &:extend(.btn-sm);
+  color: @color-33;
+}
+
+
+
+/* 主要 - 长按钮 */
+.btn-main-long {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  padding: 0 55px;
+  height: 126px;
+  line-height: 88px;
+  background: no-repeat center/contain;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  background: content-box url(./img/big_botton88.png) no-repeat center/cover;
+}
+/* 主要 - 短按钮 */
+.btn-main-short {
+  box-sizing: border-box;
+  width: 50%;
+  display: block;
+  padding: 0 55px;
+  height: 126px;
+  line-height: 88px;
+  background: no-repeat center/contain;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  background: url(./img/big_botton88.png) no-repeat ;
+  background-size: 360px 126px;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

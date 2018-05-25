@@ -1,0 +1,162 @@
+.CourseArrangement{
+	
+	.BtnGroup{
+		text-align: center;
+	}
+	.PcConfirm{
+		display: inline-block;
+		width: 657px;
+		height: 126px;
+		line-height: 88px;
+		font-size:32px;
+		text-align: center;
+		background:url('../../../img/big_botton88.png') no-repeat;
+		background-size: 100%;
+		border:none;
+		color:#fff;
+		cursor: pointer;
+	}
+
+	.PcIdearbox{background:#fff;}
+	.PcList{
+			margin-bottom: 37px;
+		li{
+			font-size: 0px;
+			// margin-top: 48px;
+			position: relative;
+			// padding-bottom: 10px;
+			&:after{
+				content: "";
+				position: absolute;
+				left: 0rem;
+				right: 0rem;
+				height: 1PX;
+				background: #ccc;
+				-webkit-transform: scaleY(0.5);
+				-ms-transform: scaleY(0.5);
+				transform: scaleY(0.5);
+				bottom: 0;
+				width: 100%;
+			}
+			div{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 30px;
+				color:#666;
+			}
+			div.PcChild{
+    			color: #ccc;
+    		}
+			&>div:nth-child(2n+1){
+				// width:182px;
+				width:26.225%;
+				text-align: left;
+				
+			}
+			div:nth-child(2n){
+				box-sizing: border-box;
+				width: 73.775%;
+				padding-right: 56px;
+				color: #333;
+				text-align: right;
+			}
+		}
+	}
+	.CaRightIcon{
+		display: inline-block;
+		width:8px;
+		height: 14px;
+		background: url('../../../img/CaRight.png') no-repeat;
+		background-size:8px 14px;
+		position: absolute;
+		top:38px;
+		right:20px;
+	}
+	.groupBox{
+		padding-left:56px;
+		padding-top:40px;
+		border-top: 1PX solid #fff;
+	}
+	.pad30{
+		padding: 30px 0;
+	}
+	.studentnum{
+		padding-bottom: 20px;
+		p{
+		 font-size: 24px;
+		 color:#666;
+		 padding: 20px 0 0;
+		}
+		span{
+			color: #333;
+		}
+	}
+   .CaPicker.color333 .am-list-item .am-list-line .am-list-extra{
+		color: #333;
+	}
+	.CaPicker{
+		position: relative;
+		.am-list-item{
+			width: 100%;
+			text-align: right;
+
+			.am-list-line .am-list-extra{
+				padding-top: .2rem
+			}
+		}
+	}
+
+
+	.showCardGroup{
+		padding: 28px;
+		.showCard{
+			margin-top:28px;
+			background: #fff;
+			border-radius: 4px;
+			border:1px solid #fff;
+			font-size: 28px;
+			color: #333;
+			.am-flexbox-item{
+				margin:10px 0;
+			}
+			span{
+				color: #666;
+			}
+		}
+		.showCard_header{
+			padding:  12px 20px 12px;
+		}
+		.showCard_body{
+			padding:  12px 30px 12px;
+		}
+		h6{
+			font-size: 30px;
+			background: url('../../../img/icon_time_line.png') no-repeat;
+			background-size:50px;
+			height: 50px;
+			line-height: 50px;
+			padding-left:56px;
+			background-position:0  8px;
+		}
+		.showCard_body:not(:last-child){
+			position: relative;
+		}
+		.showCard_body:not(:last-child):after{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 1PX;
+			background: #ccc;
+			-webkit-transform: scaleY(0.5);
+			-ms-transform: scaleY(0.5);
+			transform: scaleY(0.5);
+			bottom: 0;
+			width: 100%;
+		}
+	}
+	
+	
+	
+	
+}

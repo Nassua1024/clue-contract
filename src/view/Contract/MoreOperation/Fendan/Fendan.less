@@ -1,0 +1,236 @@
+@import (reference) "../../../../base";
+
+.fendan {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  background: #FFF;
+  min-height: 100%;
+  position: relative;
+  .cc-list {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    ul {
+      display: inline-block;
+      width: 50%;
+    }
+    .time {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #717caa;
+    }
+    li {
+      margin-bottom: 30px;
+      font-size:28px;
+      span:nth-child(1) {
+        color: #999;
+      }
+      span:nth-child(2) {
+        color: #333;
+      }
+    }
+  }
+  .contract-money {
+    box-sizing: border-box;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    font-size:28px;
+    span:nth-child(1) {
+      color: #999;
+    }
+    span:nth-child(2) {
+      color: #333;
+    }
+  }
+  .boxgroup {
+    width: 100%;
+    height: 100%;
+  }
+  .pick-wrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 35px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1PX solid @color-dd;
+      overflow: hidden;
+      padding: 40px 35px 40px 0;
+    }
+    li {
+      width: 180px;
+      height: 72px;
+      text-align: center;
+    }
+    .money {
+      display: block;
+      width: 180px;
+      height: 74px;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      border: 1PX solid #999;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 28px;
+    }
+    .store-money {
+      width: 280px;
+    }
+    .delete {
+      display: none;
+      width: 30px;
+      height: 70px;
+      background: url(../../../../img/delete.png) no-repeat center center;
+      background-size: 100%;
+    }
+    .show {
+      display: block;
+    }
+    .am-list-item {
+      padding-left: 0;
+    }
+    .am-list-line {
+      box-sizing: border-box;
+      border: 1PX solid @color-99;
+      border-radius: 8px;
+      padding-right: 10px;
+    }
+    .am-list-item, .am-list-line {
+      min-height: 100%;
+    }
+    .am-list-item .am-list-line .am-list-extra {
+      width: 100%;
+      padding: 0;
+      background: url(../../../../img/clsd.png) no-repeat right center;
+      background-size: 18px 10px;
+      text-align: center;
+      line-height: 70px;
+      flex-basis: 100%;
+      // background-size: 26px 14px;
+      font-size: 28px;
+    }
+  }
+  .am-list {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 90px;
+    overflow: hidden;
+  }
+  .btn-wrap {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    // padding:20px 0;
+    margin-top: -1PX;
+    border-top: 1PX solid @color-dd;
+    border-bottom: 1PX solid @color-dd;
+    position: relative;
+
+    .am-flexbox-item {
+      height: 100%;
+      line-height: 100%;
+      text-align: center;
+      margin-left: 0;
+      // line-height:60px;
+      color: @main-color;
+      background: rgba(113, 124, 170, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      font-size: 32px;
+    }
+    .am-flexbox-item:first-child {
+      border-right: 1PX solid @color-dd;
+    }
+  }
+  .am-textarea-control {
+    margin: 80px auto 0;
+  }
+  .btn-css {
+    position: initial !important;
+    left: initial !important;
+    bottom: initial !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+.fendan-item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+  margin: 30px 0;
+  p {
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1Px solid #000;
+    overflow-x: hidden;
+  }
+
+}
+
+.store-tit {
+  margin-top: 100px;
+}
+
+.store-wrap {
+  .pick-wrap li {
+    width: 280px;
+  }
+}
+
+.fendan div.type-tit {
+  margin-bottom: 60px;
+}
+
+.fendan-type {
+  padding-left: 60px;
+  padding-right: 30px;
+  .am-flexbox-item {
+    height: 30px;
+    // line-height: 30px;
+    font-size: 28px;
+    color: #666;
+    margin-bottom: 80px;
+    margin-left: 0;
+    flex: none;
+    width: 48%;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    vertical-align: middle;
+    float: left;
+  }
+  span {
+    vertical-align: middle;
+  }
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ripple {
+  position: absolute;
+  background: rgba(113, 124, 170, 0.3);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+  animation: ripple .4s ease-out;
+  width: 50%;
+  height: 160px;
+}

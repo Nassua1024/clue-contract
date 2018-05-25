@@ -1,0 +1,173 @@
+@import "../../../base";
+
+
+#PublicPraiseStd {
+  .lists {
+  margin-top: 40px;
+  padding: 0 20px;
+
+  .no-data {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+  .list {
+    background: #fff;
+    border-radius: 16px;
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+
+    // 预约试听等状态
+    .state {
+      position: absolute;
+      top: 0;
+      right: -13px;
+      height: 92px;
+      line-height: 80px;
+      padding: 0 35px 0 65px;
+      text-align: center;
+      color: #fff;
+      font-size: 30px;
+      background: url(../../../img/bg-xiansuozhuangtai.png) no-repeat center/100% 100%;
+
+      //background-color: #E1C99B;
+    }
+
+    .time {
+      font-family:Arial;
+      font-size: 28px;
+      color: #999;
+      line-height: 1;
+      padding-top: 27px;
+      padding-bottom: 24px;
+    }
+
+    .appointment-time {
+      position: absolute;
+      right: 20px;
+      top: 88px;
+      font-size: 24px;
+      color: #999;
+    }
+
+    .cc-name {
+      font-family: Arial;
+      color: #999;
+      margin-left: 20px;
+      padding-top: 27px;
+      padding-bottom: 24px;
+    }
+
+    .source {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .laiy {
+      font-size: 28px;
+      font-weight: bold;
+      margin-left: 40px;
+    }
+
+    .btn {
+      margin: 24px 70px 0;
+      height: 72px;
+      line-height: 72px;
+      font-size: 32px;
+      color: @main-color;
+      border: 1PX dashed;
+      border-radius: 12px;
+      background: transparent;
+      transition: all .3s;
+
+      &.am-button-active {
+        background: #f5f5f5;
+      }
+    }
+
+    .icon-badge {
+      position: absolute;
+      left: 24px;
+      top: 31px;
+      display: block;
+      width: 26px;
+      height: 26px;
+      background: url(../../../img/icon_time_line_normal.png) no-repeat center / contain;
+    }
+  }
+
+  .no-data {
+    align-items: center;
+  }
+
+  .am-list-extra {
+    width: 120px;
+    flex-basis: 100%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .am-flexbox .am-flexbox-item:first-child {
+    border-left:0;
+  }
+  .am-flexbox-item {
+    margin-left:0;
+    border-left: 1PX solid #ccc;
+  }
+  .am-list-item, .am-list-item .am-list-line {
+    padding: 0;
+  }
+  .am-list-content,
+  .am-list-arrow {
+    display: none;
+    visibility: hidden;
+  }
+
+  .mb24 {
+    margin-bottom: 20px;
+  }
+  .mb14 {
+    margin-bottom: 10px;
+  }
+
+  .students-box {
+    align-items: flex-start;
+
+    .students {
+
+    }
+  }
+
+  .box {
+    padding-left: 65px;
+    font-size: 26px;
+
+    label {
+      color: #999;
+    }
+
+    .value {
+      color: #333;
+      display: flex;
+
+      .tel {
+        color: #333;
+        margin-left: 1em;
+        display: flex;
+
+        &:after {
+          content: '';
+          margin-left: 1em;
+          width: 30px;
+          height: 30px;
+          background: url(../../../img/btn_dianhua.png) no-repeat center/contain;
+        }
+      }
+    }
+
+    > div {
+      line-height: 1;
+      padding: 4px 0;
+    }
+  }
+}

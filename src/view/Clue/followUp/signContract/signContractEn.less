@@ -1,0 +1,109 @@
+@import (reference) "../../../../base";
+
+
+body {
+  font-family: "PingFang SC", "Microsoft YaHei";
+}
+#signContractEn {
+  background: @color-f5;
+  text-align: center;
+  font-size: 34px;
+  overflow: hidden;
+
+
+  .regio {
+    margin: 100px 0;
+    overflow: hidden;
+    padding: 0 60px;
+
+    .title {
+      font-size: 38px;
+    }
+    .list-box {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow: visible;
+    }
+    .list {
+      text-align: center;
+      color: @main-color;
+      width: 280px;
+      height: 80px;
+      line-height: 80px;
+      border: 1PX solid;
+      border-radius: 40px;
+      margin-top: 50px;
+      //transition: all .3s;
+
+      &.disabled {
+        opacity: .5;
+      }
+
+      &.active {
+        color: #fff;
+        border: 1PX solid @main-color;
+        position: relative;
+        background: @main-color;
+
+        &:after {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 30px;
+          height: 30px;
+          right: 0;
+          top: 50%;
+          transform: translate(50%, -50%);
+          background: url(../../../../img/icon-duihao.png) no-repeat center/contain;
+        }
+      }
+    }
+  }
+
+  .sc-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 148px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .btns {
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0;
+    background: #F5F5F5;
+
+    .btn {
+      font-size: 30px;
+      border-radius: 8px;
+
+      &:first-child{
+        .btn-line-lg(@main-color);
+        width: 300px;
+        height: 88px;
+        line-height: 88px;
+        background: transparent;
+        &.am-button-active {
+          background: @color-f5;
+        }
+      }
+      &:last-child{
+        .btn-bg-lg(@main-color);
+        width: 300px;
+        height: 88px;
+        line-height: 88px;
+        &.am-button-active {
+          background: @main-color-on;
+        }
+        margin-left: 50px;
+      }
+
+    }
+  }
+}

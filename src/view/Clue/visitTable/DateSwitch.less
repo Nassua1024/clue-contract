@@ -1,0 +1,149 @@
+@import (reference) "../../../base";
+
+
+.DateSwitch {
+
+  padding: 24px 32px;
+
+
+
+  .list:extend(.flex-center) {
+    flex-direction: column;
+    width: 94px;
+    height: 111px;
+    margin-right: 33px;
+    color: @main-color;
+    margin-left: 0;
+    &.disabled {
+      color: #ccc;
+    }
+
+    label {
+      font-size: 26px;
+      line-height: 1;
+    }
+    span {
+      font-family: Arial;
+      line-height: 1;
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 8px;
+      margin-bottom: 6px;
+    }
+
+    &.active {
+      background: url(../../../img/bg_rili_pressed.png) no-repeat center/contain;
+      color: #fff;
+    }
+  }
+
+  .rili {
+    width: 51px;
+    height: 53px;
+    color: @main-color;
+    font-weight: bold;
+    line-height: 72px;
+    text-align: center;
+    font-size: 20px;
+    background: url(../../../img/rl-bg.png) no-repeat center/contain;
+  }
+
+
+
+
+  //.my-drawer .am-drawer-sidebar {
+  //  background-color: #fff;
+  //  overflow: auto;
+  //  -webkit-overflow-scrolling: touch;
+  //}
+  //.my-drawer .am-drawer-sidebar .am-list {
+  //  padding: 0;
+  //}
+
+
+
+}
+.sel-calendar {
+  position: static;
+  display: none;
+
+  &.open {
+    display: block;
+  }
+
+}
+
+.calendar-content {
+  background: #fff;
+  padding: 40px 32px;
+
+  .title {
+    justify-content: space-between;
+    padding-bottom: 64px;
+
+    > .disabled {
+      opacity: .3;
+    }
+
+    .date {
+      flex-direction: column;
+      color: #333;
+
+      span {
+        font-family: Arial;
+        font-size: 24px;
+        margin-top: 16px;
+      }
+      label {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .body {
+    .weeks {
+      justify-content: space-around;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .days {
+      margin-top: 30px;
+    }
+
+    .day-box {
+      justify-content: space-around;
+
+      > span {
+        font-size: 32px;
+        width: 36px;
+        height: 36px;
+        color: #333;
+        line-height: 1;
+        padding: 15px;
+        border-radius: 50%;
+        margin: 10px;
+        border: 2PX solid transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+          border-color: @main-color;
+        }
+
+        &.disabled {
+          color: #ccc;
+        }
+      }
+
+      .today {
+        color: @main-color;
+      }
+    }
+
+    .empty-day {
+      opacity: 0;
+    }
+  }
+}

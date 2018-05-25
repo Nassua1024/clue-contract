@@ -1,0 +1,427 @@
+@import (reference) "../../../base";
+
+
+#resultContainer, #ClueDetail-detail {
+  background: @color-f5;
+
+  .regio {
+    margin-bottom: 20px;
+    border-bottom: 1PX solid #ddd;
+
+    > div:last-child .am-list-line:after {
+      display: none;
+    }
+  }
+  .am-input-disabled input {
+    color: #333 !important;
+  }
+
+  .icon-xing {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      left: 0;
+      top: 50%;
+      transform: translate(30px, -50%);
+      background: url(../../../img/icon-xinghao.png) no-repeat center/contain;
+    }
+  }
+
+  .scrollBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    font-size: 32px;
+    overflow: scroll;
+    width: 100%;
+  }
+
+  .tab-box {
+    height: 100%;
+    min-width: 100%;
+
+    .tab {
+      height: 100%;
+      line-height: 96px;
+      display: inline-block;
+
+      &.active {
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 6px;
+          width: 100%;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background: @assist-color-red;
+        }
+      }
+    }
+
+
+    .info {
+      margin-left: 108px;
+      color: #333;
+
+    }
+
+    .add {
+      color: #999;
+      margin-left: 72px;
+    }
+
+    .student {
+      margin-left: 68px;
+    }
+  }
+
+  .am-popup {
+    position: static;
+  }
+
+
+
+  .content {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    bottom: 126px;
+    right: 0;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .footer {
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 126px;
+    bottom: 0;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+
+    .btn:extend(.flex-center) {
+      border-radius: 8px;
+      width: 640px;
+      height: 88px;
+      line-height: 88px;
+      font-size: 30px;
+      color: #fff;
+      background: @main-color;
+    }
+  }
+
+  .coursesCu {
+    position: relative;
+
+    .am-list-arrow {
+      position: absolute;
+      right: 0;
+      top: 0;
+      right: 32px;
+      top: 43px;
+    }
+    .am-list-item {
+      height:auto;
+      min-height: 96px;
+    }
+    .am-list-line {
+      align-items: flex-start;
+    }
+    .am-list-content {
+      margin-top: 11px;
+    }
+    .am-list-extra {
+      padding : 0 0 0 10px !important;
+      min-height: 96px;
+      white-space: normal;
+    }
+    .interest {
+      display: inline-block;
+      vertical-align: top;
+      margin: 18px 0 18px 20px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 24px;
+      background: #D9EDEC;
+      color: #6FA6A4;
+      padding: 0 36px;
+      border-radius: 4px;
+    }
+  }
+
+  .clientLabels-box {
+    position: relative;
+    .am-list-arrow {
+      position: absolute;
+      right: 0;
+      top: 0;
+      right: 32px;
+      top: 43px;
+    }
+    .am-list-item {
+      height:auto;
+      min-height: 96px;
+    }
+    .am-list-line {
+      align-items: flex-start;
+    }
+    .am-list-content {
+      margin-top: 11px;
+    }
+    .am-list-extra {
+      padding : 0 0 0 10px !important;
+      min-height: 96px;
+      white-space: normal;
+    }
+    .label {
+      display: inline-block;
+      vertical-align: top;
+      margin: 18px 20px 18px 0;
+      height: 60px;
+      line-height: 60px;
+      font-size: 24px;
+      padding: 0 36px;
+      border-radius: 4px;
+
+      &.ECONOMIC_POWER {
+        background: #E7ECD0;
+        color: #9AA656;
+      }
+      &.FAMILY_BACKGROUND {
+        background: #F9E0E0;
+        color: #E16364;
+      }
+      &.OTHER {
+        background: #D7E8F1;
+        color: #6C9FB8;
+      }
+      &.STUDY_SITUATION {
+        background: #ECE4E0;
+        color: #A69085;
+      }
+    }
+  }
+
+  .btn-del-student {
+    margin-top: 20px;
+    color: @assist-color-red;
+    font-size: 28px;
+    background: #fefefe;
+    padding-left: 50px;
+    line-height: 80px;
+
+    &.disabled {
+      opacity: .5;
+    }
+  }
+
+  .emptyPicker {
+    .am-list-extra {
+      color: #ccc;
+    }
+  }
+  .border-botm1 {
+    border-bottom: 1PX solid #ddd;
+  }
+
+  .am-list-body {
+    z-index: 1;
+    background: transparent;
+    border-top: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .am-list-item {
+    padding-left: 50px;
+    height: 96px;
+    line-height: 94px;
+  }
+  .am-list-content,.am-list-item .am-input-label {
+    width: 160px;
+    flex: none;
+    font-size: 30px;
+    color: @color-66;
+  }
+  .am-list-extra:extend(.text-sm-33) {
+    flex-basis: 100% - ((210px - 52px) / 750px * 100%);
+    text-align: left;
+  }
+  .am-input-label:extend(.text-sm-33), .client-introduce .am-textarea-label {
+    width: 160px;
+    margin-right: 0;
+  }
+  input[type='text'],input[type='tel'], textarea, .fake-input-placeholder, .fake-input {
+    font-size: 28px;
+    text-align: left;
+  }
+  .fake-input.focus:after {
+    right: auto;
+    margin-left: 3px;
+  }
+  .am-textarea-item {
+    height:auto;
+  }
+  .am-textarea-control {
+    padding-right: 24px;
+  }
+  .am-textarea-label {
+    color: #666;
+    font-size: 30px;
+    line-height: 100px;
+  }
+  .label-long {
+    .am-textarea-label, .am-list-content, .am-input-label {
+      width: 210px;
+
+    }
+  }
+  .label-longer {
+    .am-list-extra {
+      padding-left: 30px;
+    }
+    .am-input-control {
+      padding-left: 10px;
+    }
+  }
+  .baocun {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+  .arrow-right {
+    width: 10px ;
+    height: 16px;
+    display: block;
+    margin-left: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../../../img/icon-youjiantou.png);
+  }
+  .am-list-item.am-input-item:after, .am-list .am-list-item.am-textarea-item:after {
+    left: 50px;
+  }
+
+}
+.am-list-arrow-horizontal {
+  width: 10px !important;
+  height: 16px !important;
+  background-image: url(../../../img/icon-youjiantou.png) !important;
+}
+
+.extra-right {
+
+  .am-list-extra, input[type='text'],input[type='tel'], textarea, .fake-input-placeholder, .fake-input{
+    text-align: right !important;
+  }
+
+  .am-input-control {
+    padding-right: 30px;
+  }
+
+  .am-input-clear, .am-textarea-clear {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-20px, -50%);
+    width: 26px;
+    height: 26px;
+    background-size: 26px auto;
+  }
+  .am-input-clear{
+    background-size: 30px auto;
+    background-position: 2px 2px;
+  }
+  .am-textarea-clear {
+    top: 50px;
+    margin-top: 0;
+  }
+  .am-list-line {
+    padding-right: 60px;
+    background-position-x: 6.9rem !important;
+  }
+  .am-list-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0 !important;
+    transform: translate(-20px, -50%);
+  }
+}
+
+#resultContainer {
+
+  //.am-list-extra, .am-list-item input, .am-list-item textarea, .fake-input, .fake-input-placeholder {
+  //  text-align: right;
+  //}
+  //.am-list-line {
+  //  padding-right: 50px;
+  //}
+
+
+
+
+
+
+  .scrollBox {
+    //position: static;
+    //box-sizing: border-box;
+
+  }
+  .content {
+    //position: static;
+    background: #fff;
+    border-top: 1PX solid #ddd;
+  }
+  .footer {
+
+
+    .sm-btn {
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-sizing: border-box;
+
+      &:first-child {
+        .btn-line-default(@main-color);
+        width: 300px;
+        height: 88px;
+        
+        &.disabled {
+          color: #ccc;
+        }
+      }
+      &:last-child {
+        .btn-bg-default(@main-color);
+        border: 0;
+        margin-left: 40px;
+        width: 300px;
+        height: 88px;
+      }
+    }
+    //position: static;
+  }
+}
+//.am-list-item .am-input-clear {
+//  width: 20px ;
+//  height: 20px;
+//  background-size: .2rem auto;
+//  background-color: transparent;
+//  border: 1PX solid #ddd;
+  //background-image: url(../../../img/icon-shanchu.png) !important;
+//}

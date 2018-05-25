@@ -1,0 +1,168 @@
+@import (reference) "../../../../base";
+
+#FollowUp {
+  &.visit {
+    padding-top: 70px;
+  }
+
+  .scroll-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 156px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-scrolling: touch;
+  }
+
+  .ml30 {
+    margin-left: 30px;
+  }
+
+  .studentList-box {
+    overflow: hidden;
+    transition: all .3s;
+  }
+
+  .unfold:extend(.flex-center) {
+    font-size: 24px;
+    color: @main-color;
+    line-height: 60px;
+    //background: -webkit-linear-gradient(to top, rgba(229,229,229,1), rgba(229,229,229,0));
+    background: -webkit-linear-gradient(bottom, rgba(229,229,229,1), rgba(229,229,229,0));
+
+
+    > i {
+      width: 24px;
+      height: 20px;
+      margin-right: 10px;
+      background: url(../../../../img/listens-down.png) no-repeat center/contain;
+      transform: rotate(0deg);
+      transition: all .2s;
+
+      &.active {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  .studentsList {
+    padding: 0 56px 22px;
+    font-size: 28px;
+    color: #666;
+    margin-top: 10px;
+    border-bottom: 1PX solid #E6E6E6;
+
+
+    .am-flexbox-item {
+      flex: auto;
+    }
+
+    .left {
+      width: 400px;
+
+      label {
+        width: 114px;
+      }
+      span {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 3px 0;
+      }
+    }
+
+    .right {
+      width: 238px;
+
+      label {
+        box-sizing: border-box;
+        width: 114px;
+        padding-left: 20px;
+        padding-right: 30px;
+      }
+
+      span {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 3px 0;
+      }
+    }
+
+    .box {
+      padding-top: 30px;
+    }
+  }
+
+  .regio {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .title {
+      margin-left: 40px;
+      font-size: 36px;
+      color: rgb(102,102,102);
+    }
+
+    .btn1s {
+      margin-top: 50px;
+      text-align: center;
+      justify-content: center;
+
+      .btn1 {
+        width: 260px / 750px * 100%;
+        height: 66px;
+        border: 1PX solid;
+        border-radius: 33px;
+        line-height: 66px;
+        flex: none;
+        color: @main-color;
+        margin: 0 30px;
+        //transition: all .3s;
+
+        &.active {
+          color: #fff;
+          border-color: @main-color;
+          position: relative;
+          background: @main-color;
+
+          &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 24px;
+            height: 24px;
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+            background: url(../../../../img/icon-duihao.png) no-repeat center/contain;
+          }
+        }
+      }
+    }
+  }
+
+
+  .visit-dis {
+    margin-top: 50px;
+  }
+
+  .back-box {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-top: 30px;
+    background: @color-f5;
+  }
+
+  .back {
+
+  }
+}

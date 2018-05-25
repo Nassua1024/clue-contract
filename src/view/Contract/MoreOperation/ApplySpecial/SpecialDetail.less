@@ -1,0 +1,234 @@
+
+::-webkit-scrollbar{
+  	display:none;
+}
+.special-detail{
+	box-sizing: border-box;
+	padding-top: 32px;
+	padding-bottom: 108px;
+	background: #fff;
+	overflow: auto; 
+	
+	/* 线索信息 */
+	.top{
+		width: 100%;
+		height: 252px;
+		background: url(../../../../img/base-line.png) no-repeat center bottom;
+		background-size: 100% 32px;
+		li{
+			width: 100%;
+			height: 68px;
+			line-height: 68px;
+			label{
+				display: block;
+				width: 206px;
+				height: 100%;
+				float: left;
+				text-indent: 56px;
+				font-size: 28px;
+				color: #333;
+			}
+			a,p{
+				width: 544px;
+				height: 100%;
+				float: left;
+				font-size: 28px;
+			}
+			p{
+				color: #666;
+			}
+			
+			a span{
+				color: #3684e5;
+				margin-right: 20px;
+			}
+			.name{
+				width: 400px;
+				height: 100%;
+				float: left;
+				span{
+					display: block;
+					font-size: 28px;
+					color: #666; 
+				}
+			}
+			.time{
+				width: 350px;
+				height: 100%;
+				float: left;
+				label{
+					width: 118px;
+					text-indent: 0;
+				}
+				span{
+					display: block;
+					font-size: 28px;
+					color: #666; 
+				}
+			}
+		}
+	}
+	
+	/* 特批内容 */
+	.apply-content{
+		width: 100%;
+		margin-top: 16px;
+		li{
+			width: 100%;
+			height: 68px;
+			line-height: 68px;
+			label{
+				display: block;
+				width: 206px;
+				height: 100%;
+				float: left;
+				text-indent: 56px;
+				font-size: 28px;
+				color: #333;
+			}
+			p{
+				width: 544px;
+				height: 100%;
+				float: left;
+				font-size: 28px;
+				color: #666;
+			}
+		}
+		.reason{
+			height: auto;
+			overflow: hidden;
+			p{
+				box-sizing: border-box;
+				padding-top: 12px;
+				padding-right: 46px;
+				line-height: 1.5;
+				text-align: justify;
+			}
+		}
+	}
+	
+	/* 流程 */
+	.step{
+		.left{
+			width: 144px;
+		}
+		.right{
+			width: 560px;
+			li{
+				width: 100%;
+				box-sizing: border-box;
+				padding: 21px 28px 21px 42px;
+				margin-bottom: 56px;
+				border: 1PX solid #ddd;  
+				border-radius: 5px;
+				line-height: 1;
+			}
+			.position{
+				position: relative;
+				line-height: 1;
+			}
+		}
+	}
+	
+	/* 通过icon状态 */
+	.pass-icon{
+		background: url(../../../../img/done.png) no-repeat center center !important;
+		background-size: 40px 40px !important;
+	}
+	
+	/* 没通过icon状态 */
+	.reject-icon{
+		background: url(../../../../img/reject.png) no-repeat center center !important;
+		background-size: 40px 40px !important;
+	}
+
+	/* 通过有意见、不同意 */
+	.pass-have-advice,.reject{
+		position: relative;
+		line-height: 1 !important;
+		.position{
+			line-height: 1.5;
+		}
+		.time{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			font-size: 24px;
+			color: #666;
+		}
+		.apply-advice{
+			margin-top: 8px;
+			text-align: justify;
+			line-height: 1.5;
+			font-size: 24px;
+			word-wrap: break-word;
+    		word-break: break-all;
+		}
+	}
+
+	.pass-have-advice .apply-advice{
+		color: #999;
+	}
+
+	.reject .apply-advice{
+		color: #ff6766;
+	}
+	
+	/* 通过没意见 */
+	.pass-no-advice{
+		position: relative;
+		.position{
+			margin-bottom: 0 !important;
+		}
+		.time{
+			position: absolute;
+			right: 52px;
+			top: 0;
+			line-height: 42px;
+			font-size: 24px;
+			color: #666;
+		}
+	}
+
+	/* 审批中 */
+	.approval-icon{
+		background: #717caa !important;
+	}
+
+	/* 下一状态 */
+	.next-state .position{
+		color: #999 !important;
+	}
+	.approval-info{
+		border: 1PX solid #717caa !important; 
+	}
+
+	/* 审批中 下一状态*/
+	.approval-info,.next-state{
+		position: relative;
+		padding: 0 0 0 52px !important;
+		.position{
+			height: 118px !important;
+			line-height: 118px !important;
+		}
+		.time{
+			position: absolute;
+			right: 28px;
+			top: 0;
+			font-size: 24px;
+			color: #717caa;
+		}
+	}
+
+	.l-btn{
+		position: fixed !important;
+	}
+}
+
+.handle-special{
+	padding-top: 0 !important;
+	.btn{
+		position: fixed !important;
+	}
+}

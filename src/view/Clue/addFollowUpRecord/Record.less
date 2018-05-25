@@ -1,0 +1,94 @@
+@import (reference) "../../../base";
+
+
+#Record {
+
+  .btn {
+    box-sizing: border-box;
+    height: 88px;
+    border-radius: 8px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 640px;
+    color: #fff;
+    margin-top: 50px;
+    background: @main-color;
+    border: 0;
+    font-size: 32px;
+    &.am-button-active {
+      background-color: @main-color-on;
+    }
+  }
+
+  .custom-student {
+    input {
+      padding-left: 160px;
+      color: #888;
+    }
+  }
+
+
+
+
+  .icon-xing {
+    position: relative;
+    &:after {
+      left: 50px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      left: 0;
+      top: 50%;
+      transform: translate(30px, -50%);
+      background: url(../../../img/icon-xinghao.png) no-repeat center/contain;
+    }
+  }
+  .am-list-body {
+    background: transparent;
+  }
+  .am-list-item {
+    padding-left: 50px;
+    height: 96px;
+    line-height: 94px;
+  }
+  .am-list-content,.am-list-item .am-input-label {
+    width: 160px;
+    flex: none;
+    font-size: 30px;
+    color: @color-66;
+  }
+  .am-list-extra:extend(.text-sm-33) {
+    flex-basis: 100% - ((210px - 52px) / 750px * 100%);
+    text-align: left;
+  }
+  .am-input-label:extend(.text-sm-33), .client-introduce .am-textarea-label {
+    width: 160px;
+    margin-right: 0;
+  }
+  input[type='text'],input[type='tel'], textarea, .fake-input-placeholder, .fake-input {
+    font-size: 28px;
+    text-align: left;
+  }
+  .fake-input.focus:after {
+    right: auto;
+    margin-left: 3px;
+  }
+
+  .am-textarea-item {
+    height:auto;
+  }
+  .am-textarea-control {
+    padding-right: 24px;
+  }
+  .am-textarea-label {
+    color: #666;
+    font-size: 30px;
+    line-height: 100px;
+  }
+
+}

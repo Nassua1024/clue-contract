@@ -1,0 +1,142 @@
+
+.plan-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-bottom: 180px;
+	background: #eaeeef;
+	overflow: scroll;
+	.tip { 
+		width: 100%;
+		padding-top: 32px;
+		background: #fff;
+		font-size: 28px;
+		color: #666;
+		text-indent: 56px;
+		span {
+			color: #ff6666;
+			margin: 0 3px;
+		}	
+	}
+	.plan-list {
+		margin-bottom: 28px;
+		padding-top: 40px;
+		background: #fff;
+		.label {
+			position: relative;
+			height: 46px;
+		}
+		i {
+			display: inline-block;
+			width: 6px;
+			height: 40px;
+			background: #717caa;
+			border-radius: 3px;
+			vertical-align: middle;
+		}
+		h3 {
+			display: inline-block;
+			margin-left: 50px;
+			vertical-align: top;
+			line-height: 40px;
+			font-size: 30px;
+			color: #666;
+		}
+		a {
+			position: absolute;
+			top: 50%;
+			right: 52px;
+			display: inline-block;
+			width: 128px;
+			height: 46px;
+			margin-top: -23px;
+			background: url('../../../img/plan-del.png') no-repeat center center;
+			background-size: 100% 100%; 
+		}
+	}
+	.am-list-item.am-input-item {
+		padding-right: 0;
+		.am-input-label {
+			padding-left: 20px;
+			font-size: 28px;
+			color: #666;
+		}
+		input {
+			padding-right: 56px;
+			text-align: right;
+			font-size: 26px;
+			color: #666;
+		}
+		::-webkit-input-placeholder {
+    		color: #999;
+		}
+	}
+	.am-list-item {
+		height: 100px;
+		padding-left: 36px;
+		.am-list-line {
+			padding: 0 56px 0 20px;
+			border-bottom: 1PX solid #ddd;
+		}
+		.am-list-content {
+			font-size: 28px;
+			color: #666;
+		}
+		.am-list-extra {
+			font-size: 26px;
+			color: #999;
+		}
+		.am-list-arrow {
+			margin-left: 30px;
+		}
+	}
+	.active .am-list-extra {
+		color: #666 !important;
+	}
+	.add-wrap {
+		width: 710px;
+		height: 132px;
+		box-sizing: border-box;
+		padding-top: 24px;
+		margin: 0 auto;
+		background: #fff;
+		text-align: center;
+		i {
+			display: block;
+			width: 100%;
+			height: 50px;
+			background: url('../../../img/plan-add.png') no-repeat center center;
+			background-size: 45px 50px;
+		}
+		span {
+			margin-top: 14px;
+			font-size: 26px;
+			color: #666;
+			letter-spacing: 2px;
+		}
+	}
+	.confirm-wrap {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		height: 0;
+		width: 100%;
+		height: 148px;
+		box-sizing: border-box;
+		padding-bottom: 22px;
+		background: #eaeeef;
+		a {
+			display: block;
+			width: 657px;
+			height: 126px;
+			margin: 0 auto;
+			background: url('../../../img/plan-confirm.png') no-repeat center center;
+			background-size: 100% 100%;
+		}
+	}
+	.input-focus {
+		position: static;
+		margin-top: 50px;
+	}
+}

@@ -1,0 +1,82 @@
+@import (reference) '../../../base.less';
+#normal-list{
+	
+	width:100%;
+	height:100%;
+	background:@color-ff;
+	overflow: hidden;
+
+	/* 搜索框 */
+	.am-search{
+		width:100%;
+		height:112px;
+		box-sizing:border-box;
+		padding:20px;
+		background-color:@color-f5;
+		.am-search-input,.am-search-synthetic-ph,.am-search-value{
+			height:100%;
+			line-height:72px;
+		}
+		.am-search-input .am-search-clear{
+			top:50%;
+			margin-top:-0.28rem;
+		}
+	}
+
+	/* select选择 */
+	.select-wrap{
+		width:100%;
+		height:110px;
+		box-sizing:border-box;
+		padding:0 32px;
+		background:@color-ff;
+		display:flex;
+		justify-content:space-between;
+		li{
+			width:48%;
+		}
+		.am-list-item{
+			width:100%;
+			height:64px;
+			min-height: 64px;
+			padding-left:0;		
+			margin-right: 28px;
+			margin-top: 23px;
+			float:left;
+			border:1PX solid @color-dd;
+			border-radius: 8px;
+		}
+		.am-list-line{
+			min-height:100%;
+			padding-right:15px;
+		}
+		.am-list-extra{
+			background:url(../../../img/clsd.png) no-repeat right center;
+			background-size:13px 7px;
+			flex-basis:100%;
+			text-align:center;
+			font-size:@font-28;
+			color:@color-33;
+			padding:0;
+			line-height: 1;
+		}
+	}
+	.am-flexbox-item {
+		flex: auto;
+	}
+	.am-flexbox-item:nth-child(1) {
+		width: 25%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.am-flexbox-item:nth-child(2){
+		width: 30%;		
+	}
+	.am-flexbox-item:nth-child(3) {
+		width: 25%;
+	}
+	.am-flexbox-item:nth-child(4){
+		width: 20%;
+	}
+}
